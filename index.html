@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ADE's Store</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success border-white text-white" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- jumbotron -->
+      <div class="p-5 bg-primary text-white">
+        <h1 class="text-center text-uppercase">Shop with us</h1>
+        <p class="text-center">buy affordable wears at the best online store...</p>
+      </div>
+
+      <!-- carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide my-4" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D&w=1000&q=80" class="d-block w-75 mx-auto h-50" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://wallpapercave.com/wp/wp3130198.jpg" class="d-block w-75 mx-auto h-50" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://c0.wallpaperflare.com/preview/73/280/970/4k-wallpaper-boutique-business-clothes.jpg" class="d-block w-75 mx-auto h-50" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- grid -->
+      <div class="row w-75 mx-auto mb-4">
+        <div class="col-sm-3 mt-4">
+            <div class="card" style="width:200px">
+                <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMroGaMCN1jvGGgWq_ictAb0gvuZGCVPxAJrjqPNJvDZrjA3EstOBqMyi_Uy1CJjft25U&usqp=CAU" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Denim Jacket</h4>
+                  <p class="card-text">$300</p>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    See Profile
+                  </button>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-3 mt-4">
+            <div class="card" style="width:200px">
+                <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM5k9whRFwG9iyEjBNb7K0DLwkJkA2iCOCsOiqe9AgLFd4evW8Ghi-uuUTdIwAsf65vF8&usqp=CAU" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Jean Jacket</h4>
+                  <p class="card-text">$300</p>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    See Profile
+                  </button>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-3 mt-4">
+            <div class="card" style="width:200px">
+                <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtrD11Q9wQi_sFoe0vuVN30PehwJd0NcLo-Zd3z6n2YAKPwRaqJzh4Tk6X-Gs-kdsMS2c&usqp=CAU" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Vintage</h4>
+                  <p class="card-text">$300</p>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    See Profile
+                  </button>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-3 mt-4">
+            <div class="card" style="width:200px">
+                <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsVQeWAmI-RGDnGUuSIYITgjO5kih119feAwLL4QwSCspHCy-ZTa9ntjvFn0BGbag0ijo&usqp=CAU" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Denim Jacket</h4>
+                  <p class="card-text">$300</p>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    See Profile
+                  </button>
+                </div>
+              </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-primary">
+    <p class="text-white text-center">copyright@ade's-storeforclassywears</p>
+
+  </footer>
+
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
